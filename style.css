@@ -3,3 +3,119 @@
 #142601
 #6CA632
 #D93B18 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --font-group-light: 'Gruppo', cursive;
+    --font-geral-: 'Roboto', sans-serif;
+    --bg--902: #2E5902;
+    --bg--601: #142601;
+    --bg--632: #6CA632;
+    --bg--b18: #D93B18;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px 2px #fff;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--bg--902);
+}
+
+header #logo {
+    margin-top: 11px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+header #logo h3 {
+    font-size: 2rem;
+    font-family: var(--font-geral-);
+    color: var(--bg--902);
+}
+
+header #logo .logoNutri {
+    font-size: 1rem;
+    color: var(--bg--b18);
+    font-family: var(--font-group-light);
+    font-weight: 400;
+}
+
+#navMenu {
+    width: 50%;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#navMenu a {
+    text-decoration: none;
+    font-family: var(--font-geral-);
+    color: #000;
+    font-weight: 500;
+}
+
+#navMenu #btnLogin {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#btnLogin i {
+    font-size: 1.1rem;
+    color: var(--bg--902);
+    opacity: .9;
+}
+
+/* Parte do menu e cabeçalho */
+
+#secaoSobre {
+    border: 2px solid red;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#sobrePedro {
+   width: 90%;
+}
+
+#sobrePedro h1 {
+    text-align: center;
+    font-size: clamp(2rem,1vw,2.2rem);
+    font-family: var(--font-geral-);
+    color: var(--bg--902);
+    padding-block: 10px;
+
+}
+#sobrePedro .logoNutri {
+    color: var(--bg--b18);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+#sobrePedro p{
+
+}
+#secaoSobre img {   
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+
+
+
+/* aside{
+    border: 2px solid yellow;
+} */
