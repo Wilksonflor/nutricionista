@@ -78,7 +78,7 @@ header #logo .logoNutri {
 /* Parte do menu e cabeçalho */
 
 #secaoSobre {
-    border: 2px solid red;
+
     margin-top: 60px;
     display: flex;
     align-items: center;
