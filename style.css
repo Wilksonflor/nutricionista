@@ -3,13 +3,6 @@
 #142601
 #6CA632
 #D93B18 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-
 :root {
     --font-group-light: "Gruppo", cursive;
     --font-geral-: "Roboto", sans-serif;
@@ -17,6 +10,13 @@
     --bg--601: #142601;
     --bg--632: #6ca632;
     --bg--b18: #d93b18;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 header {
@@ -59,8 +59,14 @@ header #logo .logoNutri {
 #navMenu a {
     text-decoration: none;
     font-family: var(--font-geral-);
-    color: #000;
+    color: #000000;
     font-weight: 500;
+    transition: 0.7s ease-in-out;
+    opacity: 0.8;
+}
+
+#navMenu a:hover {
+    opacity: 1;
 }
 
 #navMenu #btnLogin {
@@ -78,7 +84,12 @@ header #logo .logoNutri {
 /* Parte do menu e cabeçalho */
 
 #secaoSobre {
-    background-image: linear-gradient(to right top, #cdcdcd, #cdcdd1d0, #cecdd5, #cdcddadd, #cdcddec6);
+    background-image: linear-gradient(to right top,
+            #cdcdcd,
+            #cdcdd1d0,
+            #cecdd5,
+            #cdcddadd,
+            #cdcddec6);
     width: 100%;
     margin-inline: auto;
     margin-top: 3px;
@@ -115,15 +126,54 @@ header #logo .logoNutri {
 }
 
 .fotosSobre {
-    width: 100%;
-    height: auto;
+    width: 500px;
+    height: 500px;
     margin-block: 20px;
-    border-radius: 8px;
 }
 
-                    /* Aqui finaliza a primeira section */
+/* Aqui finaliza a primeira section */
 
+#objetivos {
+    width: 100%;
+}
 
-aside img{
-    width: 500px;
+#objetivos h2 {
+    text-align: center;
+    margin: 32px 0 20px 0;
+}
+
+.containerObjetivos { 
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    /* justify-content: spacearound; */
+    flex-wrap: wrap;
+    gap: 20px;
+    /* background-color: #eceaea; */
+}
+
+.boxObjetivos{
+    width: 400px;
+    height: 250px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 100%, 0.711);
+    text-align: center;
+}
+
+.boxObjetivos p{
+    font-family: var(--font-geral-);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.boxImg{
+    width: 100%;
+    /* height: auto; */
+   
+}
+
+.boxImg img{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 auto;
 }
