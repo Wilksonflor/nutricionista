@@ -24,7 +24,7 @@ header {
     align-items: center;
     justify-content: space-between;
     box-shadow: 1px 1px 1px 2px #fff;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     border-bottom: 1px solid var(--bg--902);
 }
 
@@ -78,7 +78,7 @@ header #logo .logoNutri {
 /* Parte do menu e cabeçalho */
 
 #secaoSobre {
-    background-image: linear-gradient(to right top, #cdcdcd, #cdcdd1, #cecdd5, #cdcdda, #cdcdde);
+    background-image: linear-gradient(to right top, #cdcdcd, #cdcdd1d0, #cecdd5, #cdcddadd, #cdcddec6);
     width: 100%;
     margin-inline: auto;
     margin-top: 3px;
@@ -124,3 +124,6 @@ header #logo .logoNutri {
                     /* Aqui finaliza a primeira section */
 
 
+aside img{
+    width: 500px;
+}
