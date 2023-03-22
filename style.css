@@ -11,12 +11,12 @@
 }
 
 :root {
-    --font-group-light: 'Gruppo', cursive;
-    --font-geral-: 'Roboto', sans-serif;
-    --bg--902: #2E5902;
+    --font-group-light: "Gruppo", cursive;
+    --font-geral-: "Roboto", sans-serif;
+    --bg--902: #2e5902;
     --bg--601: #142601;
-    --bg--632: #6CA632;
-    --bg--b18: #D93B18;
+    --bg--632: #6ca632;
+    --bg--b18: #d93b18;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
     align-items: center;
     justify-content: space-between;
     box-shadow: 1px 1px 1px 2px #fff;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid var(--bg--902);
 }
 
@@ -72,31 +72,35 @@ header #logo .logoNutri {
 #btnLogin i {
     font-size: 1.1rem;
     color: var(--bg--902);
-    opacity: .9;
+    opacity: 0.9;
 }
 
 /* Parte do menu e cabeçalho */
 
 #secaoSobre {
-
-    margin-top: 60px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    background-image: linear-gradient(to right top, #cdcdcd, #cdcdd1, #cecdd5, #cdcdda, #cdcdde);
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 3px;
+    padding-top: 50px;
 }
 
 #sobrePedro {
-   width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: auto;
+    width: 50%;
 }
 
 #sobrePedro h1 {
     text-align: center;
-    font-size: clamp(2rem,1vw,2.2rem);
+    font-size: clamp(2rem, 1vw, 2.2rem);
     font-family: var(--font-geral-);
     color: var(--bg--902);
     padding-block: 10px;
-
 }
+
 #sobrePedro .logoNutri {
     color: var(--bg--b18);
     font-weight: 400;
@@ -104,18 +108,19 @@ header #logo .logoNutri {
     font-size: 1.1rem;
 }
 
-#sobrePedro p{
-
-}
-#secaoSobre img {   
-    width: 500px;
-    height: 500px;
-    margin-top: 20px;
+#sobrePedro p {
+    text-align: justify;
+    font-family: var(--font-geral-);
+    line-height: 1.2;
 }
 
+.fotosSobre {
+    width: 100%;
+    height: auto;
+    margin-block: 20px;
+    border-radius: 8px;
+}
+
+                    /* Aqui finaliza a primeira section */
 
 
-
-/* aside{
-    border: 2px solid yellow;
-} */
