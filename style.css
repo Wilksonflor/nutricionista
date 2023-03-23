@@ -23,7 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 1px 1px 1px 2px #fff;
+    box-shadow: 0 0 1px 1px #fff;
     padding-bottom: 5px;
     border-bottom: 1px solid var(--bg--902);
 }
@@ -135,45 +135,85 @@ header #logo .logoNutri {
 
 #objetivos {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #objetivos h2 {
     text-align: center;
     margin: 32px 0 20px 0;
+    font-family: var(--font-geral-);
 }
 
-.containerObjetivos { 
+.containerObjetivos {
     margin-top: 15px;
     display: flex;
     align-items: center;
-    /* justify-content: spacearound; */
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     /* background-color: #eceaea; */
 }
 
-.boxObjetivos{
+.boxObjetivos {
+
     width: 400px;
-    height: 250px;
-    box-shadow: 2px 2px 5px hsla(0, 0%, 100%, 0.711);
+    height: auto;
+
+    box-shadow: 0 0 10px 5px #cdcdcd;
+    border-radius: 8px;
     text-align: center;
 }
 
-.boxObjetivos p{
+.boxObjetivos h3 {
+    font-family: var(--font-geral-);
+    margin-top: 5px;
+}
+
+.boxObjetivos p {
     font-family: var(--font-geral-);
     font-size: 0.75rem;
     font-weight: 400;
+    padding: 5px;
+
 }
 
-.boxImg{
+.boxObjetivos:hover {
+    border: 2px inset var(--bg--632);
+    transition: .2s;
+}
+
+.boxImg {
     width: 100%;
-    /* height: auto; */
-   
 }
 
-.boxImg img{
+.boxImg img {
     width: 200px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 auto;
+    height: auto;
+}
+
+#marcarConsulta {
+    text-decoration: none;
+    text-align: center;
+
+    margin-block: 20px;
+    width: 150px;
+    height: 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #2e5902;
+    font-family: var(--font-geral-);
+    font-weight: 300;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+#marcarConsulta:hover {
+    background-color: #fff;
+    color: #000000;
+    font-weight: 400;
+    border: 1px solid var(--bg--902);
+
 }
