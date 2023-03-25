@@ -401,7 +401,7 @@ opacity: 1;
 
     .open,
     .navMenuMobile {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 30px;
