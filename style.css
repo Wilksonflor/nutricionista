@@ -241,9 +241,10 @@ header #logo .logoNutri {
     background-color: #ded7d7c4;
 }
 
-#atletas h2 {
+#atletas h2{
+    padding-top: 11px;
     text-align: center;
-    font-weight: var(--font-geral-);
+    font-family: var(--font-geral-);
     font-weight: 600;
 
 }
