@@ -48,11 +48,11 @@ header #logo .logoNutri {
     font-weight: 400;
 }
 
-header.active{
+.active {
     background-color: #fff;
-    box-shadow: -2px 8px 27px 5px rgba(0,0,0,0.43);
-    -webkit-box-shadow: -2px 8px 27px 5px rgba(0,0,0,0.43);
-    -moz-box-shadow: -2px 8px 27px 5px rgba(0,0,0,0.43);
+    box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
     width: 100%;
     position: fixed;
     top: 0;
@@ -60,6 +60,7 @@ header.active{
     scroll-behavior: smooth;
 
 }
+
 #navMenu {
     width: 50%;
     margin-right: 50px;
@@ -89,9 +90,13 @@ header.active{
     cursor: pointer;
 }
 
-#navMenuMobile,
+.navMenuMobile {
+    display: none;
+}
+
 #btnMobileOpen,
-#btnMobileClose {
+#btnMobileClose,
+.btnsMenu {
     display: none;
 }
 
@@ -231,38 +236,40 @@ header.active{
 
 
 @media only screen and (max-width: 730px) {
-    header{
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        border: 2px solid red;
-    }
-    #navMenu{
+
+    #navMenu {
         display: none;
     }
-    #btnMobileOpen{
+    .btnsMenu{
+        display: flex;
+    }
+    #btnMobileOpen {
         margin-right: 30px;
         display: block;
     }
-    #btnMobileOpen i{
+
+    #btnMobileOpen i {
         font-size: 1.2rem;
     }
-    
-    .open{     
+    #btnMobileClose{
+        display: block;
+    }
+    .open,
+    .navMenuMobile {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
-        width: 80%;
-        height: 95vh;
+        width: 100%;
+        height: 80vh;
         background-color: #fff;
         position: fixed;
-        top: 77px;
+        top: 74px;
         right: 0;
 
     }
-    #navMenuMobile a{
+
+    .navMenuMobile a {
         margin-top: 20px;
         text-decoration: none;
         font-family: var(--font-geral-);
@@ -271,10 +278,19 @@ header.active{
         transition: 0.7s ease-in-out;
         opacity: 0.8;
     }
-    #navMobile a:hover{
+
+    .navMenuMobile button {
+        background-color: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #navMobile a:hover {
         opacity: 1;
     }
-    .fotosSobre{
-    width: 100%;
+
+    .fotosSobre {
+        width: 100%;
     }
 }
