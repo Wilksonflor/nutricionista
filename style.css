@@ -48,6 +48,18 @@ header #logo .logoNutri {
     font-weight: 400;
 }
 
+header.active{
+    background-color: #fff;
+    box-shadow: -2px 8px 27px 5px rgba(0,0,0,0.43);
+    -webkit-box-shadow: -2px 8px 27px 5px rgba(0,0,0,0.43);
+    -moz-box-shadow: -2px 8px 27px 5px rgba(0,0,0,0.43);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+
+}
 #navMenu {
     width: 50%;
     margin-right: 50px;
@@ -69,10 +81,32 @@ header #logo .logoNutri {
     opacity: 1;
 }
 
+
+
 #navMenu #btnLogin {
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+#navMenuMobile,
+#btnMobileOpen,
+#btnMobileClose {
+    display: none;
+}
+
+#btnMobileOpen,
+#btnMobileClose {
+    /* display: none; */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#btnMobileOpen i,
+#btnMobileClose i {
+    color: #000;
+    font-size: 1.1rem;
 }
 
 #btnLogin i {
@@ -192,28 +226,55 @@ header #logo .logoNutri {
     height: auto;
 }
 
-#marcarConsulta {
-    text-decoration: none;
-    text-align: center;
 
-    margin-block: 20px;
-    width: 150px;
-    height: 20px;
 
-    border: none;
-    border-radius: 8px;
 
-    background-color: #2e5902;
-    font-family: var(--font-geral-);
-    font-weight: 300;
-    color: #fff;
-    transition: .3s ease-in-out;
-}
 
-#marcarConsulta:hover {
-    background-color: #fff;
-    color: #000000;
-    font-weight: 400;
-    border: 1px solid var(--bg--902);
- 
+@media only screen and (max-width: 730px) {
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: 2px solid red;
+    }
+    #navMenu{
+        display: none;
+    }
+    #btnMobileOpen{
+        margin-right: 30px;
+        display: block;
+    }
+    #btnMobileOpen i{
+        font-size: 1.2rem;
+    }
+    
+    .open{     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 80%;
+        height: 95vh;
+        background-color: #fff;
+        position: fixed;
+        top: 77px;
+        right: 0;
+
+    }
+    #navMenuMobile a{
+        margin-top: 20px;
+        text-decoration: none;
+        font-family: var(--font-geral-);
+        color: #000000;
+        font-weight: 500;
+        transition: 0.7s ease-in-out;
+        opacity: 0.8;
+    }
+    #navMobile a:hover{
+        opacity: 1;
+    }
+    .fotosSobre{
+    width: 100%;
+    }
 }
