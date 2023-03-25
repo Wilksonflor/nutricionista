@@ -242,10 +242,12 @@ header #logo .logoNutri {
 }
 
 #atletas h2{
+    
     padding-top: 11px;
     text-align: center;
-    font-family: var(--font-geral-);
+    font-family: 'Delicious Handrawn', cursive;
     font-weight: 600;
+    font-size: 3.1rem;
 
 }
 
@@ -254,6 +256,7 @@ header #logo .logoNutri {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     background-color: #ded7d7c4;
 }
 
@@ -284,7 +287,7 @@ header #logo .logoNutri {
 .card::before{
     content: "";
     position: absolute;
-    height: 55%;
+    height: 45%;
     width: 100%;
     background-color: var(--bg--632);
     border-radius: 20px 20px 0 0;
@@ -350,7 +353,28 @@ header #logo .logoNutri {
     margin: 0 2px;
 }
 
+.buttonAbout{
+    background-color: #333;
+    border-radius: 8px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.buttonAbout a{
 
+    font-family: var(--font-geral-);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    opacity: .8;
+    transition: all .3s ease;
+}
+
+.buttonAbout a:hover{
+opacity: 1;
+}
 
 @media only screen and (max-width: 730px) {
 
