@@ -253,10 +253,12 @@ header #logo .logoNutri {
 
 .container {
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+
     background-color: #ded7d7c4;
 }
 
@@ -374,6 +376,31 @@ header #logo .logoNutri {
 
 .buttonAbout a:hover{
 opacity: 1;
+}
+
+/* AQUI TERMINA A PARTE DOS ATLETAS */
+
+
+.containerImc{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+
+
+}
+.contentImc{
+    width: 100%;
+    height: auto;
+    border: 2px solid yellow;
+}
+#formImc{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media only screen and (max-width: 730px) {
