@@ -249,7 +249,7 @@ header #logo .logoNutri {
     font-family: 'Delicious Handrawn', cursive;
     font-weight: 600;
     font-size: 3.1rem;
-
+    padding-bottom: 10px;
 }
 
 .container {
@@ -259,7 +259,7 @@ header #logo .logoNutri {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
 
     background-color: #ded7d7c4;
 }
