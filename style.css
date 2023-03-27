@@ -390,17 +390,17 @@ opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+
 
 
 }
 .contentImc{
     width: 100%;
     height: auto;
-    border: 2px solid yellow;
+   
 }
 #formImc{
-    border: 2px solid green;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,7 +426,7 @@ opacity: 1;
     }
 
     #btnMobileClose {
-        display: block;
+        display: none;
     }
 
     .open,
@@ -465,7 +465,16 @@ opacity: 1;
         opacity: 1;
     }
 
-    .fotosSobre {
+    #sobrePedro{
         width: 100%;
+        text-align: center;
+    }
+    #sobrePedro p{
+        text-align: justify;
+        padding-inline: 10px;
+    }
+    .fotosSobre {
+        width: 90%;
+        height: auto;
     }
 }
