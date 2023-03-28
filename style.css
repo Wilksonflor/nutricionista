@@ -76,7 +76,7 @@ header #logo .logoNutri {
     font-family: var(--font-geral-);
     color: #000000;
     font-weight: 500;
-    transition: 0.7s ease-in-out;
+    transition: 0.3s ease-in-out;
     opacity: 0.8;
 }
 
@@ -388,7 +388,7 @@ header #logo .logoNutri {
 
 /* AQUI TERMINA A PARTE DOS ATLETAS */
 
-
+/* 
 .containerImc{
     width: 100%;
     height: auto;
@@ -412,7 +412,7 @@ header #logo .logoNutri {
     width: 100%;
     height: 50vh;
     border: 2px solid black;
-}
+} */
 
 
 @media only screen and (max-width: 730px) {
