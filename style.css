@@ -95,13 +95,13 @@ header #logo .logoNutri {
     display: none;
 }
 
-#btnMobileOpen,
+#btnMobile,
 #btnMobileClose,
 .btnsMenu {
     display: none;
 }
 
-#btnMobileOpen,
+#btnMobile,
 #btnMobileClose {
     /* display: none; */
     border: none;
@@ -109,7 +109,7 @@ header #logo .logoNutri {
     cursor: pointer;
 }
 
-#btnMobileOpen i,
+#btnMobile i,
 #btnMobileClose i {
     color: #000;
     font-size: 1.1rem;
@@ -242,8 +242,8 @@ header #logo .logoNutri {
     background-color: #ded7d7c4;
 }
 
-#atletas h2{
-    
+#atletas h2 {
+
     padding-top: 11px;
     text-align: center;
     font-family: 'Delicious Handrawn', cursive;
@@ -289,16 +289,17 @@ header #logo .logoNutri {
 }
 
 
-.card::before{
+.card::before {
     content: "";
     position: absolute;
     height: 45%;
     width: 100%;
     background-color: var(--bg--632);
     border-radius: 20px 20px 0 0;
-  
+
 }
-.card .cardContent{
+
+.card .cardContent {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -307,7 +308,7 @@ header #logo .logoNutri {
     /* z-index: 100; */
 }
 
-.card .media-icon{
+.card .media-icon {
     position: absolute;
     top: 10px;
     right: 20px;
@@ -316,7 +317,7 @@ header #logo .logoNutri {
     align-items: center;
 }
 
-.card .media-icon i{
+.card .media-icon i {
     cursor: pointer;
     color: #fff;
     opacity: 0.6;
@@ -324,11 +325,11 @@ header #logo .logoNutri {
     transition: all 0.3s ease;
 }
 
-.card .media-icon i:hover{
+.card .media-icon i:hover {
     opacity: 1;
 }
 
-.card .name-profession{
+.card .name-profession {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,29 +337,30 @@ header #logo .logoNutri {
     color: #333;
 }
 
-.name-profession .name{
+.name-profession .name {
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-.name-profession .profession{
+.name-profession .profession {
     padding-bottom: 10px;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.card .rating{
+.card .rating {
     display: flex;
     align-items: center;
     margin-top: 18px;
 }
-.card .rating i{
+
+.card .rating i {
     font-size: 1.12rem;
     color: #ffcb0c;
     margin: 0 2px;
 }
 
-.buttonAbout{
+.buttonAbout {
     background-color: #333;
     border-radius: 8px;
     width: 60%;
@@ -366,7 +368,8 @@ header #logo .logoNutri {
     justify-content: center;
     margin-top: 10px;
 }
-.buttonAbout a{
+
+.buttonAbout a {
 
     font-family: var(--font-geral-);
     font-size: 1rem;
@@ -377,34 +380,30 @@ header #logo .logoNutri {
     transition: all .3s ease;
 }
 
-.buttonAbout a:hover{
-opacity: 1;
+.buttonAbout a:hover {
+    opacity: 1;
 }
 
 /* AQUI TERMINA A PARTE DOS ATLETAS */
 
-
-.containerImc{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid red;
-
-
-}
+/* Calculadora IMC */
 .contentImc{
     width: 100%;
-    height: auto;
-    border: 2px solid yellow;
+    height: 50vh;
+    border: 2px solid red;
 }
-#formImc{
-    border: 2px solid green;
+
+.contentImc #formImc{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50vh;
+    border: 2px solid black;
 }
+
 
 @media only screen and (max-width: 730px) {
 
@@ -416,22 +415,22 @@ opacity: 1;
         display: flex;
     }
 
-    #btnMobileOpen {
+    #btnMobile {
         margin-right: 30px;
         display: block;
     }
 
-    #btnMobileOpen i {
+    #btnMobile i {
         font-size: 1.2rem;
     }
 
     #btnMobileClose {
-        display: block;
+        display: none;
     }
 
     .open,
     .navMenuMobile {
-        display: none;
+        /* display: flex; */
         flex-direction: column;
         align-items: center;
         gap: 30px;

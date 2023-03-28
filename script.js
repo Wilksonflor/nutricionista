@@ -1,17 +1,20 @@
-// function menuScroll(){
-//     const scroll = document.querySelector('.header')
-//     console.log('OI')
-// }
-
-const menuOpen = document.querySelector('#btnMobileOpen').addEventListener('click', () =>{
-    const menuList = document.querySelector('.navMenuMobile')
-    const btnClose = document.querySelector('#btnMobileClose');
+function menuMobile() {
+    const menuHamburguer = document.querySelector('#btnMobile');
     
-    menuList.classList.toggle('open')
-    btnClose.addEventListener('click', () =>{
-        console.log('oi')
-       
-    })
-   
-})
+    const iconClose = '<i class="fa-solid fa-xmark"></i>';
+    const iconHamburguer = '<i class="fa-solid fa-bars"></i>';
+    const menuList = document.getElementById('mobile');
+
+
+    if (!menuList === menuList.classList.contains('open')) {
+        menuList.classList.add('open');
+        document.querySelector('#mobile').style.display = "flex";
+        menuHamburguer.innerHTML = iconClose;
+
+    } else {
+        menuList.classList.remove('open');
+        document.querySelector('#mobile').style.display = "none";
+        menuHamburguer.innerHTML = iconHamburguer;
+    }
+}
 
