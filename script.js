@@ -1,6 +1,15 @@
+function onScroll(){
+    const menuHeader = document.getElementById('menuHeader')
+    if(scrollY > 0){
+        menuHeader.classList.add('activeMenu')
+    }else{
+        menuHeader.classList.remove('activeMenu')
+    }
+}
+    
 function menuMobile() {
     const menuHamburguer = document.querySelector('#btnMobile');
-    
+
     const iconClose = '<i class="fa-solid fa-xmark"></i>';
     const iconHamburguer = '<i class="fa-solid fa-bars"></i>';
     const menuList = document.getElementById('mobile');
@@ -17,4 +26,3 @@ function menuMobile() {
         menuHamburguer.innerHTML = iconHamburguer;
     }
 }
-
