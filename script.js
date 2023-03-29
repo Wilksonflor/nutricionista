@@ -1,4 +1,3 @@
-
 function menuMobile() {
     const menuHamburguer = document.querySelector('#btnMobile');
 
@@ -18,3 +17,5 @@ function menuMobile() {
         menuHamburguer.innerHTML = iconHamburguer;
     }
 }
+
+

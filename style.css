@@ -48,7 +48,7 @@ header #logo .logoNutri {
     font-weight: 400;
 }
 
-header.active {
+.active {
     width: 100%;
     position: fixed;
     top: 0;
