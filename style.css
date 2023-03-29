@@ -48,19 +48,18 @@ header #logo .logoNutri {
     font-weight: 400;
 }
 
-.activeMenu {
-    border: 2px solid blue;
-    background-color: #fff;
-    /* box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
-    -webkit-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
-    -moz-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43); */
+header.active {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     scroll-behavior: smooth;
-
+    border: 2px solid blue;
+    background-color: #fff;
+    /* box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43); */
 }
 
 #navMenu {
@@ -388,13 +387,14 @@ header #logo .logoNutri {
 
 /* AQUI TERMINA A PARTE DOS ATLETAS */
 
-/* 
+
 .containerImc{
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     border: 2px solid red;
 }
 .contentImc{
@@ -412,7 +412,7 @@ header #logo .logoNutri {
     width: 100%;
     height: 50vh;
     border: 2px solid black;
-} */
+}
 
 
 @media only screen and (max-width: 730px) {

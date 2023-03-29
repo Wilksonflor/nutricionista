@@ -1,12 +1,4 @@
-function onScroll(){
-    const menuHeader = document.getElementById('menuHeader')
-    if(scrollY > 0){
-        menuHeader.classList.add('activeMenu')
-    }else{
-        menuHeader.classList.remove('activeMenu')
-    }
-}
-    
+
 function menuMobile() {
     const menuHamburguer = document.querySelector('#btnMobile');
 
