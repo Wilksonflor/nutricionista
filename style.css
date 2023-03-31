@@ -7,7 +7,7 @@
     --font-group-light: "Gruppo", cursive;
     --font-geral-: "Roboto", sans-serif;
     --bg--902: #2e5902;
-    --bg--601: #142601;
+    --bg--601: #070706;
     --bg--632: #6ca632;
     --bg--b18: #d93b18;
 }
@@ -26,6 +26,19 @@ header {
     box-shadow: 0 0 1px 1px #fff;
     padding-bottom: 5px;
     border-bottom: 1px solid var(--bg--902);
+}
+header.active {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    scroll-behavior: smooth;
+    border: 2px solid blue;
+    background-color: #fff;
+    /* box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43); */
 }
 
 header #logo {
@@ -48,19 +61,6 @@ header #logo .logoNutri {
     font-weight: 400;
 }
 
-.active {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    scroll-behavior: smooth;
-    border: 2px solid blue;
-    background-color: #fff;
-    /* box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
-    -webkit-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
-    -moz-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43); */
-}
 
 #navMenu {
     width: 50%;
@@ -123,6 +123,64 @@ header #logo .logoNutri {
 
 /* Parte do menu e cabeçalho */
 
+/* MODAL DO LOGIN */
+.modalLoginContainer{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modalContent{
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: ;
+    align-items: center;
+    justify-content: center;
+
+    
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 25px;
+  
+    
+}
+.headerModal{
+    background-color: red;
+    
+}
+#formModal{
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footerModal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+.footerModal button{
+    background-color: #aaa;
+}
+/* --------------------/------------------- */
 #secaoSobre {
     background-image: linear-gradient(to right top,
             #cdcdcd,
