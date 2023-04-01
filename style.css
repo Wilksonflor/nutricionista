@@ -144,25 +144,23 @@ header #logo .logoNutri {
     width: 50%;
     height: 50vh;
     margin: 0 auto;
-
     display: flex;
-    flex-direction: ;
+   
     align-items: center;
     justify-content: center;
 
-    
-    background-color: #fefefe;
+   background-color: #fff;
+
+
     border: 1px solid #888;
     border-radius: 25px;
   
+
     
 }
-.headerModal{
-    background-color: red;
-    
-}
+
 #formModal{
-    width: 60%;
+    width: 50%;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -170,15 +168,65 @@ header #logo .logoNutri {
     justify-content: center;
     
 }
+#formModal .formHeader{
+    width: 80%;
+    margin-bottom: 60px;
+    text-align: center;
+
+font-family: var(--font-geral-);
+}
+#formModal .formHeader p{
+    font-family: var(--font-geral-);
+    font-size: 0.95rem;
+    color: #fff;
+}
+#formModal label{
+    width: 80%;
+    font-family: var(--font-geral-);
+
+}
+#formModal input{
+    
+    width: 80%;
+    height: 25px;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    margin-block: 5px;
+    font-family: var(--font-geral-);
+}
+#formModal input:focus{
+    border: 2px solid #3d6b0e;
+}
 
 .footerModal{
-    width: 100%;
+    width: 80%;
+    height: 50px;
     display: flex;
-    justify-content: space-between;
-    border: 2px solid red;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
-.footerModal button{
-    background-color: #aaa;
+.footerModal a{
+    text-decoration: none;
+    color: #000150;
+}
+
+#loginSubmit{
+    cursor: pointer;
+    width: 100px;
+    color: #fff;
+    margin-top: 15px;
+    padding: 3px;
+    border: none;
+    border-radius: 8px;
+    background-color: #175000;
+}
+
+#loginSubmit:hover{
+    background-color: #fff;
+    border: 2px solid #175000;
+    color: #000;
 }
 /* --------------------/------------------- */
 #secaoSobre {
