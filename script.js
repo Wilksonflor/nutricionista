@@ -20,11 +20,17 @@ function menuMobile() {
 
 
 // Modal
-// function openModal(){
-//     const btnLogin = document.querySelector('#btnLogin');
-//     console.log('')
-// }
+
 const btnLogin = document.querySelector('#btnLogin').addEventListener('click', () =>{
     const modal = document.querySelector('.modalLoginContainer')
     modal.style.display = "flex";
+})
+function fazerLogin(){
+    
+}
+
+
+// tirar o evento de submit
+const modal = document.querySelector('#formModal').addEventListener('submit', (e) =>{
+    e.preventDefault();
 })

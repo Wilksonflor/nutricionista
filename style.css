@@ -179,7 +179,9 @@ font-family: var(--font-geral-);
 #formModal .formHeader p{
     font-family: var(--font-geral-);
     font-size: 0.95rem;
-    color: #fff;
+    font-weight: bold;
+    color: var(--bg--632);
+
 }
 #formModal label{
     width: 80%;
@@ -201,11 +203,12 @@ font-family: var(--font-geral-);
 }
 
 .footerModal{
-    width: 80%;
-    height: 50px;
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
 .footerModal a{
@@ -222,12 +225,31 @@ font-family: var(--font-geral-);
     border: none;
     border-radius: 8px;
     background-color: #175000;
+    transition: .3s ease-in-out;
 }
 
 #loginSubmit:hover{
     background-color: #fff;
-    border: 2px solid #175000;
+    border: 1px solid #175000;
     color: #000;
+}
+
+#cancelar{
+    cursor: pointer;
+    width: 80px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(197, 7, 7, 0.915);
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+#cancelar:hover{
+    border: none;
+    border: 1px solid rgba(197, 7, 7, 0.915);
+    background-color: #fff;
+    color: rgba(197, 7, 7, 0.915);
+    font-weight: bold;
 }
 /* --------------------/------------------- */
 #secaoSobre {
