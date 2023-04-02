@@ -23,32 +23,41 @@ function menuMobile() {
 const criarUsuario = document.querySelector('#loginSubmit').addEventListener('click', () => {
 
     const usuario = document.querySelector("#usuario").value;
-    const senha = document.querySelector("#senha").value;
+    const senha = document.getElementById("senha").value;
+    const validacao = document.querySelector('.validacaoInput');
+
+
     const usuarioCompleto = {
         usuario,
         senha
     };
-    if(usuario === 'user' && senha === 'pass'){
-      
-    }else{
-        alert('digite os campos')
+
+    if (usuario == '' && senha == '') {
+        validacao.style.display = 'block'
+        console.log(senha)
+
+    } else {
+        validacao.style.display = 'none';
+
     }
     console.log(usuarioCompleto)
 })
+
+
 
 
 // Modal
 const btnLogin = document.querySelector("#btnLogin").addEventListener("click", () => {
     const modal = document.querySelector(".modalLoginContainer");
     modal.style.display = "flex";
-    
+
 });
 
-
-// const btnCancel = document.querySelector("#cancelar").addEventListener("click", () => {
-//     const modal = document.querySelector(".modalLoginContainer");
-//     modal.style.display = "none";
-// });
+// Btn para cancelar (sair)
+const btnCancel = document.querySelector("#cancelar").addEventListener("click", () => {
+    const modal = document.querySelector(".modalLoginContainer");
+    modal.style.display = "none";
+});
 
 // tirar o evento de submit
 const modal = document.querySelector("#formModal").addEventListener("submit", (e) => {
