@@ -32,7 +32,7 @@ const criarUsuario = document.querySelector('#loginSubmit').addEventListener('cl
         senha
     };
 
-    if (usuario == '' && senha == '') {
+    if (usuario !== '' && senha != '') {
         validacao.style.display = 'block'
         console.log(senha)
 
