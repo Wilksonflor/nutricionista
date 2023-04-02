@@ -20,27 +20,19 @@
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 0 1px 1px #fff;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--bg--902);
-}
-header.active {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
-    scroll-behavior: smooth;
-    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #fff;
-    /* box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
-    -webkit-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43);
-    -moz-box-shadow: -2px 8px 27px 5px rgba(0, 0, 0, 0.43); */
+    box-shadow: 0 0 1px 1px #fff;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--bg--902);
 }
-
+    
 header #logo {
     margin-top: 11px;
     margin-bottom: 3px;
@@ -143,26 +135,25 @@ header #logo .logoNutri {
 }
 .modalContent{
     width: 50%;
-    height: 50vh;
+    height: 70vh;
     margin: 0 auto;
     display: flex;
    
     align-items: center;
     justify-content: center;
 
-   background-color: #fff;
+    background-color: #fff;
 
 
     border: 1px solid #888;
     border-radius: 25px;
   
-
     
 }
 
 #formModal{
     width: 50%;
-    height: 50vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
