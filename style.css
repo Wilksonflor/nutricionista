@@ -545,7 +545,7 @@ font-family: var(--font-geral-);
 }
 
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 890px) {
 
     #navMenu {
         display: none;

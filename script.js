@@ -15,7 +15,19 @@ function menuMobile() {
         document.querySelector("#mobile").style.display = "none";
         menuHamburguer.innerHTML = iconHamburguer;
     }
+
+
 }
+
+    // Para quando clicar fechar o menu
+    const menuMobileList = document.querySelector('#mobile');
+    const menuSections = document.querySelectorAll('#mobile a');
+    menuSections.forEach(item => {
+        item.addEventListener('click', () => {
+        //    Colocar a logica aqui para quando clicar fechar.
+            
+        })
+    })
 
 // Para armazenar os dados de login -> Armazenar no banco de dados;
 // Mudar os inputs para o de cadastro
@@ -32,7 +44,7 @@ const criarUsuario = document.querySelector('#loginSubmit').addEventListener('cl
         senha
     };
 
-    if (usuario !== '' && senha != '') {
+    if (usuario == undefined && senha == undefined) {
         validacao.style.display = 'block'
         console.log(senha)
 
